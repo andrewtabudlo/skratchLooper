@@ -1,0 +1,79 @@
+body {
+    background-image: url("./RitchieRuftone/cover2.png");
+    background-size: 612px 362px;
+    background-repeat: no-repeat;
+}
+
+.loopContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 612px;
+    height: 362px;
+}
+
+.topRow {
+    display: flex;
+    width: 540px;
+    height: 52px;
+    justify-content: space-around;
+}
+
+.bottomRow {
+    display: flex;
+    width: 540px;
+    height: 52px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.loop {
+    width: 50px;
+    height: 50px;
+}
+
+#loop01 {
+    margin: 0 0 0 2.5em;
+}
+
+#loop02 {
+    margin: 0 0 0 -1em;
+}
+
+#loop03 {
+    margin: 0 0 0 -1em;
+}
+
+#loop04 {
+    margin: 0 0 0 -1em;
+}
+
+#loop05 {
+    margin: 0 0 0 -2em;
+}
+
+#loop06 {
+    margin: 0 0 0 2.5em;
+}
+
+#loop07 {
+    margin: 0 0 0 -1em;
+}
+
+#loop08 {
+    margin: 0 0 0 -1em;
+}
+
+#loop09 {
+    margin: 0 0 0 -1em;
+}
+
+#loop10 {
+    margin: 0 0 0 -2em;
+}
+
+#stop {
+    height: 50px;
+    width: 50px;
+}
