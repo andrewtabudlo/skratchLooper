@@ -1,128 +1,141 @@
 stopAll = () => {
-    loop01.stop();
-    loop02.stop();
-    loop03.stop();
-    loop04.stop();
-    loop05.stop();
-    loop06.stop();
-    loop07.stop();
-    loop08.stop();
-    loop09.stop();
+    loop1.stop();
+    loop2.stop();
+    loop3.stop();
+    loop4.stop();
+    loop5.stop();
+    loop6.stop();
+    loop7.stop();
+    loop8.stop();
+    loop9.stop();
     loop10.stop();
 }
 
 // load loops
 
-var loop01 = new Howl({
-    src: ['./RitchieRuftone/01.mp3'],
+var loop1 = new Howl({
+    src: ['./RitchieRuftone/1.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 11330, true]
+    }
 });
 
-var loop02 = new Howl({
-    src: ['./RitchieRuftone/02.mp3'],
+var loop2 = new Howl({
+    src: ['./RitchieRuftone/2.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 24201, true]
+    }
 });
 
-var loop03 = new Howl({
-    src: ['./RitchieRuftone/03.mp3'],
+var loop3 = new Howl({
+    src: ['./RitchieRuftone/3.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 10224, true]
+    }
 });
 
-var loop04 = new Howl({
-    src: ['./RitchieRuftone/04.mp3'],
+var loop4 = new Howl({
+    src: ['./RitchieRuftone/4.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 22490, true]
+    }
 });
 
-var loop05 = new Howl({
-    src: ['./RitchieRuftone/05.mp3'],
+var loop5 = new Howl({
+    src: ['./RitchieRuftone/5.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 23034, true]
+    }
 });
 
-var loop06 = new Howl({
-    src: ['./RitchieRuftone/06.mp3'],
+var loop6 = new Howl({
+    src: ['./RitchieRuftone/6.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 54759, true]
+    }
 });
 
-var loop07 = new Howl({
-    src: ['./RitchieRuftone/07.mp3'],
+var loop7 = new Howl({
+    src: ['./RitchieRuftone/7.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 26568, true]
+    }
 });
 
-var loop08 = new Howl({
-    src: ['./RitchieRuftone/08.mp3'],
+var loop8 = new Howl({
+    src: ['./RitchieRuftone/8.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 13616, true]
+    }
 });
 
-var loop09 = new Howl({
-    src: ['./RitchieRuftone/09.mp3'],
+var loop9 = new Howl({
+    src: ['./RitchieRuftone/9.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 29440, true]
+    }
 });
 
 var loop10 = new Howl({
     src: ['./RitchieRuftone/10.mp3'],
     autoplay: false,
-    loop: true
+    sprite: {
+      loop: [0, 60854, true]
+    }
 });
 
-document.getElementById("stop").onclick = function () {
-    stopAll();
+playLoop = (loop) => {
+  switch(loop) {
+    case "loop1":
+      loop1.play('loop');
+      break;
+    case "loop2":
+      loop2.play('loop');
+      break;
+    case "loop3":
+      loop3.play('loop');
+      break;
+    case "loop4":
+      loop4.play('loop');
+      break;
+    case "loop5":
+      loop5.play('loop');
+      break;
+    case "loop6":
+      loop6.play('loop');
+      break;
+    case "loop7":
+      loop7.play('loop');
+      break;
+    case "loop8":
+      loop8.play('loop');
+      break;
+    case "loop9":
+      loop9.play('loop');
+      break;
+    case "loop10":
+      loop10.play('loop');
+      break;
+  }
 }
 
-document.getElementById("loop01").onclick = function () {
-        stopAll();
-        loop01.play();
-};
-
-document.getElementById("loop02").onclick = function () {
-        stopAll();
-        loop02.play();
-};
-
-document.getElementById("loop03").onclick = function () {
+$("#stop").click(function() {
     stopAll();
-    loop03.play();
-};
+});
 
-document.getElementById("loop04").onclick = function () {
-    stopAll();
-    loop04.play();
-};
-
-document.getElementById("loop05").onclick = function () {
-    stopAll();
-    loop05.play();
-};
-
-document.getElementById("loop06").onclick = function () {
-    stopAll();
-    loop06.play();
-};
-
-document.getElementById("loop07").onclick = function () {
-    stopAll();
-    loop07.play();
-};
-
-document.getElementById("loop08").onclick = function () {
-    stopAll();
-    loop08.play();
-};
-
-document.getElementById("loop09").onclick = function () {
-    stopAll();
-    loop09.play();
-};
-
-document.getElementById("loop10").onclick = function () {
-    stopAll();
-    loop10.play();
-};
+//any loop number clicked on
+$(".loop").click(function(e){
+  //stop any playing loop
+  stopAll();
+  //play loop with id that was clicked on
+  playLoop(e.currentTarget.id);
+});
