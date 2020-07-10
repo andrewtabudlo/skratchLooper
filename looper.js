@@ -9,6 +9,16 @@ stopAll = () => {
     loop8.stop();
     loop9.stop();
     loop10.stop();
+    loop11.stop();
+    loop12.stop();
+    loop13.stop();
+    loop14.stop();
+    loop15.stop();
+    loop16.stop();
+    loop17.stop();
+    loop18.stop();
+    loop19.stop();
+    loop20.stop();
 }
 
 // load loops
@@ -93,6 +103,86 @@ var loop10 = new Howl({
     }
 });
 
+var loop11 = new Howl({
+    src: ['./RitchieRuftone/11.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 11330, true]
+    }
+});
+
+var loop12 = new Howl({
+    src: ['./RitchieRuftone/12.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 24201, true]
+    }
+});
+
+var loop13 = new Howl({
+    src: ['./RitchieRuftone/13.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 10224, true]
+    }
+});
+
+var loop14 = new Howl({
+    src: ['./RitchieRuftone/14.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 22490, true]
+    }
+});
+
+var loop15 = new Howl({
+    src: ['./RitchieRuftone/15.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 23034, true]
+    }
+});
+
+var loop16 = new Howl({
+    src: ['./RitchieRuftone/16.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 54759, true]
+    }
+});
+
+var loop17 = new Howl({
+    src: ['./RitchieRuftone/17.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 26568, true]
+    }
+});
+
+var loop18 = new Howl({
+    src: ['./RitchieRuftone/18.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 13616, true]
+    }
+});
+
+var loop19 = new Howl({
+    src: ['./RitchieRuftone/19.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 29440, true]
+    }
+});
+
+var loop20 = new Howl({
+    src: ['./RitchieRuftone/20.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 60854, true]
+    }
+});
+
 playLoop = (loop) => {
   switch(loop) {
     case "loop1":
@@ -123,6 +213,36 @@ playLoop = (loop) => {
       loop9.play('loop');
       break;
     case "loop10":
+      loop10.play('loop');
+      break;
+    case "loop11":
+      loop1.play('loop');
+      break;
+    case "loop12":
+      loop2.play('loop');
+      break;
+    case "loop13":
+      loop3.play('loop');
+      break;
+    case "loop14":
+      loop4.play('loop');
+      break;
+    case "loop15":
+      loop5.play('loop');
+      break;
+    case "loop16":
+      loop6.play('loop');
+      break;
+    case "loop17":
+      loop7.play('loop');
+      break;
+    case "loop18":
+      loop8.play('loop');
+      break;
+    case "loop19":
+      loop9.play('loop');
+      break;
+    case "loop20":
       loop10.play('loop');
       break;
   }
