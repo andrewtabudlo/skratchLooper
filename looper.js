@@ -107,7 +107,7 @@ var loop11 = new Howl({
     src: ['./RitchieRuftone/11.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 11330, true]
+      loop: [0, 54759, true]
     }
 });
 
@@ -115,7 +115,7 @@ var loop12 = new Howl({
     src: ['./RitchieRuftone/12.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 24201, true]
+      loop: [0, 27379, true]
     }
 });
 
@@ -123,7 +123,7 @@ var loop13 = new Howl({
     src: ['./RitchieRuftone/13.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 10224, true]
+      loop: [0, 15902, true]
     }
 });
 
@@ -131,7 +131,7 @@ var loop14 = new Howl({
     src: ['./RitchieRuftone/14.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 22490, true]
+      loop: [0, 52868, true]
     }
 });
 
@@ -139,7 +139,7 @@ var loop15 = new Howl({
     src: ['./RitchieRuftone/15.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 23034, true]
+      loop: [0, 41641, true]
     }
 });
 
@@ -147,7 +147,7 @@ var loop16 = new Howl({
     src: ['./RitchieRuftone/16.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 54759, true]
+      loop: [0, 21971, true]
     }
 });
 
@@ -155,7 +155,7 @@ var loop17 = new Howl({
     src: ['./RitchieRuftone/17.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 26568, true]
+      loop: [0, 47014, true]
     }
 });
 
@@ -163,7 +163,7 @@ var loop18 = new Howl({
     src: ['./RitchieRuftone/18.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 13616, true]
+      loop: [0, 49132, true]
     }
 });
 
@@ -171,7 +171,7 @@ var loop19 = new Howl({
     src: ['./RitchieRuftone/19.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 29440, true]
+      loop: [0, 13616, true]
     }
 });
 
@@ -179,7 +179,15 @@ var loop20 = new Howl({
     src: ['./RitchieRuftone/20.mp3'],
     autoplay: false,
     sprite: {
-      loop: [0, 60854, true]
+      loop: [0, 44553, true]
+    }
+}
+
+var loop21 = new Howl({
+    src: ['./RitchieRuftone/21.mp3'],
+    autoplay: false,
+    sprite: {
+      loop: [0, 13616, true]
     }
 });
 
@@ -216,34 +224,37 @@ playLoop = (loop) => {
       loop10.play('loop');
       break;
     case "loop11":
-      loop1.play('loop');
+      loop11.play('loop');
       break;
     case "loop12":
-      loop2.play('loop');
+      loop12.play('loop');
       break;
     case "loop13":
-      loop3.play('loop');
+      loop13.play('loop');
       break;
     case "loop14":
-      loop4.play('loop');
+      loop14.play('loop');
       break;
     case "loop15":
-      loop5.play('loop');
+      loop15.play('loop');
       break;
     case "loop16":
-      loop6.play('loop');
+      loop16.play('loop');
       break;
     case "loop17":
-      loop7.play('loop');
+      loop17.play('loop');
       break;
     case "loop18":
-      loop8.play('loop');
+      loop18.play('loop');
       break;
     case "loop19":
-      loop9.play('loop');
+      loop19.play('loop');
       break;
     case "loop20":
-      loop10.play('loop');
+      loop20.play('loop');
+      break;
+    case "loop21":
+      loop21.play('loop');
       break;
   }
 }
